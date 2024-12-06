@@ -120,7 +120,7 @@ INSERT INTO "COACH_LINK_SKILL" (coach_id, skill_id)
 VALUES 
 (
     (SELECT id FROM "COACH" WHERE user_id = (SELECT id FROM "USER" WHERE email = 'starplatinum@hexschooltest.io')), 
-    (SELECT id FROM "SKILL" WHERE name = "有氧運動"),
+    (SELECT id FROM "SKILL" WHERE name = '有氧運動'),
     (SELECT id FROM "COACH" WHERE user_id = (SELECT id FROM "USER" WHERE email = 'starplatinum@hexschooltest.io')),  
     (SELECT id FROM "SKILL" WHERE name = '復健訓練') 
 );
